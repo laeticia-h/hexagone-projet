@@ -67,12 +67,11 @@ public class Partie {
 
     // la partie est-elle terminée
     public boolean isTerminee() {
-        return this.partieTerminee;
+        return this.partieTerminee || this.nbEssais >= NB_ESSAIS_MAX;
     }
 
     // la partie est terminée
     void done() {
-        this.partieTerminee = true;
-    }
+        this.partieTerminee = true;}
 
 }
